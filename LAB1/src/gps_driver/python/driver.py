@@ -32,12 +32,7 @@ if __name__ == '__main__':
                           
                     h=line.split(b",")
                     print(h)
-                    utc = float(h[1])
-                    UTChours = utc//10000
-                    UTCmint = (utc-(UTChours*10000))//100
-                    UTCsec = (utc - (UTChours*10000) - (UTCmint*100))
-                    UTCfinsecs = (UTChours*3600 + UTCmint*60 + UTCsec)
-                    UTCfinnsecs = int((UTCfinsecs * (10**7)) % (10**7))
+                    
                     
                     lat = float(h[2])
                     
@@ -73,8 +68,7 @@ if __name__ == '__main__':
                     print(Easting, Northing, Zone_Number, Zone_Letter)
                     
                     msg.header.stamp = rospy.get_rostime()
-                    msg.header.stamp.secs = int(UTCfinsecs)
-                    msg.header.stamp.nsecs = int(UTCfinnsecs)
+                    
                     msg.header.frame_id = 'GPS1_Frame'
                     msg.latitude = latitude
                     msg.longitude = longitude
