@@ -1,4 +1,4 @@
-std_msgs/Header header
+Header Header
 float64 latitude
 float64 longitude
 float64 altitude
