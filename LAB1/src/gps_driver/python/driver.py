@@ -31,7 +31,7 @@ if __name__ == '__main__':
             if line.startswith(b'$GPGGA'):
                           
                     h=line.split(b",")
-                    print(h)
+                   
                     
                     
                     lat = float(h[2])
