@@ -67,9 +67,9 @@ if __name__ == '__main__':
                     Easting, Northing, Zone_Number, Zone_Letter= utm.from_latlon(latitude,longitude)
                     print(Easting, Northing, Zone_Number, Zone_Letter)
                     
-                    msg.header.stamp = rospy.get_rostime()
+                    msg.Header.stamp = rospy.get_rostime()
                     
-                    msg.header.frame_id = 'GPS1_Frame'
+                    msg.Header.frame_id = 'GPS1_Frame'
                     msg.latitude = latitude
                     msg.longitude = longitude
                     msg.utm_easting = Easting
