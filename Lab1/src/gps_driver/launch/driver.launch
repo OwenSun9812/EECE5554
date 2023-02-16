@@ -1,5 +1,0 @@
-<launch>
-
-    <node pkg = "gps_driver0" type = "gps_driver.py" name = "gps_Publisher" output = "screen"></node> 
-        
-</launch>
