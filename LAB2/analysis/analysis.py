@@ -149,7 +149,7 @@ def plotdatatograph(altidata, eastdata, northdata, bad, stay, process):
     plt.legend()
     plt.grid(linestyle=':')
 
-    # UTM Error
+   
     plt.figure(4)
     if stay:
         east_error = eastdata - avgeast
