@@ -236,10 +236,7 @@ if __name__ == '__main__':
                 if north != 0.0:
                     northing_data.append(north)
 
-    # print('easting_data: ', {i:easting_data.count(i) for i in easting_data})
-    # print('northing_data: ', {i:northing_data.count(i) for i in northing_data})        
-    # plt.plot(longitude_data, latitude_data)
-    # mpl.show()
+    
     f.close()
     
     # print(len(altdata))
