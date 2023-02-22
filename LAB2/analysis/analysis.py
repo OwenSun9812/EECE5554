@@ -182,7 +182,7 @@ if __name__ == '__main__':
     northing_data = []
 
     data_process = True
-    file_name = 'tennis_moving.yaml'
+    file_name = 'occ_station.yaml'
     if 'isec' in file_name:
         bad_flag = True
     else:
